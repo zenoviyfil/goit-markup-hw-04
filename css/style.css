@@ -8,6 +8,7 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --bck-grnd-color: #e5e5e5;
   --theme-color: #2f303a;
+  --svg-color: ##afb1b8;
 }
 
 body {
@@ -348,7 +349,48 @@ section {
   margin-right: 0;
 }
 
-/* --- ------------- ---*/
+/* --- ------------- --- */
+
+/* --- Clients section --- */
+
+.container-clients {
+  display: block;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-logo {
+  width: 106px;
+  height: 60px;
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  color: var(--link-color);
+}
+
+/* --- --------------- --- */
 
 /* --- team section ---*/
 
@@ -509,6 +551,11 @@ section {
 
 /* --- footer --- */
 
+.flex-container {
+  display: flex;
+  align-items: baseline;
+}
+
 footer {
   padding: 60px 0;
   background-color: var(--theme-color);
@@ -535,6 +582,10 @@ footer {
   margin-top: 9px;
 }
 
+.address-container {
+  margin-right: 70px;
+}
+
 .address {
   font-style: normal;
   font-weight: normal;
@@ -554,4 +605,34 @@ footer {
   margin-top: 9px;
 }
 
-/* --- ------ --- */
+.social-footer {
+  width: 206px;
+}
+.social-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social-footer-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.social-footer-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* --- ------ --- */ ;
