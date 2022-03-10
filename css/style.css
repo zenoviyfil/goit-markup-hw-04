@@ -47,9 +47,8 @@ p {
 
 /* --- hover focus --- */
 
-.button:hover,
-.button:focus {
-  color: var(--link-color);
+button:hover,
+button:focus {
   cursor: pointer;
 }
 
@@ -97,7 +96,8 @@ a.tel-link-footer:focus {
 
 .projects-portfolio-item:hover,
 .projects-portfolio-item:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .logo-link:hover,
@@ -197,10 +197,6 @@ section {
   color: var(--principal-text-color);
   text-decoration: none;
   padding: 32px 0px;
-}
-
-.garant {
-  accent-color: var(--link-color);
 }
 
 .mail-link-header,
