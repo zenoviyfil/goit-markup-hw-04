@@ -229,8 +229,12 @@ section {
 /* --- hero section --- */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
   padding: 200px 0;
-  background: url(/imges/Imgbg.png);
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../imges/Imgbg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -386,21 +390,31 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
+.clients-item > a {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--link-color);
+  cursor: pointer;
+}
+
 .clients-logo {
-  width: 106px;
-  height: 60px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  fill: #afb1b8;
 }
 
 .clients-logo:hover,
 .clients-logo:focus {
-  color: var(--link-color);
+  fill: var(--link-color);
 }
 
 /* --- --------------- --- */
