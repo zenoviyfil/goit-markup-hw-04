@@ -80,6 +80,7 @@ a.mail-link-header:focus .envelope,
 a.tel-link-header:hover .smartphone,
 a.tel-link-header:focus .smartphone {
   fill: var(--link-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 a.tel-link-header:hover,
@@ -425,6 +426,7 @@ section {
 }
 
 .person-name {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -433,6 +435,7 @@ section {
 }
 
 .person-profession {
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -683,6 +686,7 @@ footer {
 .social-footer {
   width: 206px;
 }
+
 .social-header {
   font-style: normal;
   font-weight: 700;
@@ -715,9 +719,15 @@ footer {
   margin-top: 20px;
 }
 
+.social-list-footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+}
+
 .social-footer-item > a {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
 }
 
 /* --- ------ --- */ ;
