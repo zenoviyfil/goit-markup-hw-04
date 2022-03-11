@@ -481,14 +481,14 @@ section {
   fill: #afb1b8;
 }
 
-.social-list-icon:hover,
-.social-list-icon:focus {
+.social-list-item:hover .social-list-icon {
   fill: var(--white-color);
 }
 
 .social-list-item:hover,
 .social-list-item:focus {
   background-color: var(--link-color);
+  cursor: pointer;
 }
 
 /* --- ------------ ---*/
