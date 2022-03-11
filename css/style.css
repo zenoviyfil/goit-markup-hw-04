@@ -237,15 +237,21 @@ section {
 
 /* --- hero section --- */
 
-.hero {
+.hero-section {
   max-width: 1600px;
+  height: 600px;
+  padding: 0;
+  background-image: url(../imges/Imgbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero {
   padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../imges/Imgbg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: rgba(47, 48, 58, 0.4);
 }
 
 .main-theme {
