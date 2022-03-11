@@ -531,8 +531,6 @@ section {
 .clients-item {
   display: flex;
   margin-right: 30px;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -543,20 +541,23 @@ section {
   margin-right: 0;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-item > a:hover,
+.clients-item > a:focus {
   border: 1px solid var(--link-color);
   cursor: pointer;
 }
 
-.clients-item:hover .clients-logo,
-.clients-item:focus .clients-logo {
+.clients-item > a:hover .clients-logo,
+.clients-item > a:focus .clients-logo {
   fill: var(--link-color);
 }
 
 .clients-item > a {
-  width: 106px;
-  height: 60px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .clients-logo {
