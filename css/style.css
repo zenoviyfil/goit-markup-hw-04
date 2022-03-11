@@ -45,6 +45,18 @@ p {
   list-style-type: none;
 }
 
+.active::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background-color: var(--link-color);
+}
+
 /* --- hover focus --- */
 
 button:hover,
@@ -196,6 +208,7 @@ section {
 .index-link,
 .portfolio-link,
 .contacts-link {
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
